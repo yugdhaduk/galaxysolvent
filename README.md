@@ -1,2 +1,1 @@
-# galaxysolvent
-Bag Bharti Calculator
+
