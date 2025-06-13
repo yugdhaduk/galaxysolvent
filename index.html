@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Track Bag Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <h1>Track Bag Calculator</h1>
+    <div class="form-sections">
+      <!-- Left Side -->
+      <div class="form-left">
+        <div class="input-group">
+          <label>Loading Kg:</label>
+          <input type="number" id="netKg" placeholder="E.g. 28000" />
+        </div>
+
+        <div class="input-group">
+          <label>Loading Bags:</label>
+          <input type="number" id="bags" placeholder="E.g. 525" />
+        </div>
+
+        <div class="input-group">
+          <label>Vehicle loading Requirement:</label>
+          <input type="number" id="totalNetKg" placeholder="E.g. 30000" />
+        </div>
+
+        <div class="output" id="bhatiResult">Kg Per Bag: --</div>
+        <div class="output" id="remainingResult">Remaining Kg: --</div>
+        <div class="output highlight" id="totalAddBag">Add Bags: --</div>
+        <div class="output high" id="totalWithdrawBag">Withdraw Bags: --</div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="form-right">
+        <div class="input-group">
+          <label><b>🔢 Custom Bag Comparison<br> Bag Counts (comma-separated):<b></b></label></label>
+          <input type="text" id="customBags" placeholder="E.g. -1, 0, 1" />
+        </div>
+        <div class="output" id="customResults">--</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
